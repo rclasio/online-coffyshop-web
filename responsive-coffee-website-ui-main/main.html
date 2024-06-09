@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--=============== BOXICONS ===============-->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <!-- Alpinejs -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <!-- cart js -->
+  <script src="assets/js/cart.js"></script>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="assets/media/coffe cup.png" type="image/x-icon">
+  <!-- father icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <title>Familly Coffee-Main</title>
+</head>
+
+
+<body onload="slider()">
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">Familly<span>.Coffee</span> </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#menu" class="nav__link">Menu</a>
+          </li>
+          <li class="nav__item">
+            <a href="#place" class="nav__link">Tempat</a>
+          </li>
+          <li class="nav__item">
+            <a href="#blog" class="nav__link">Blog</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+          <li class="nav__item">
+            <a href="login.html" class="loginbtn" target="_blank">Login</a>
+          </li>
+        </ul>
+        <div class="nav__close" id="nav-close">
+          <i class="bx bx-x"></i>
+        </div>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-grid-alt"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main" id="main">
+    <div class="background" id="background"></div>
+    <section class="hero section" id="home">
+      <h1 class="hero__title">
+        <span>Welcome Our Coffee Shop</span><br />
+        Mulai Hari Kamu Dengan <br />
+        makanan dan minuman favorit ditempat.
+      </h1>
+      <button class="hero__button">Order Now</button>
+    </section>
+
+    <!-- Menu -->
+    <section class="products section" id="menu">
+      <div class="products__container container">
+        <h3 class="title_product">
+          Menu <span>Kami</span>
+        </h3>
+        <h4 class="section__title">
+          Menu coffee shop dapat <br />
+          membuat harimu menjadi happy!!
+        </h4>
+      </div>
+
+      <div class="special__category">
+        <div class="special__group">
+          <div class="special__img__border">
+            <img src="./assets/media/cup2.png" alt="" class="special__img" />
+          </div>
+          <h3 class="special__title">Minuman</h3>
+          <p class="special__description">
+            5 menu minuman.
+          </p>
+        </div>
+        <div class="special__group">
+          <div class="special__img__border">
+            <img src="./assets/media/piring.png" alt="" class="special__img" />
+          </div>
+          <h3 class="special__title">Makanan</h3>
+          <p class="special__description">
+            5 menu makanan.
+          </p>
+        </div>
+        <div class="special__group">
+          <div class="special__img__border">
+            <img src="./assets/media/coffee-cup.png" alt="" class="special__img" />
+          </div>
+          <h3 class="special__title">Desserts</h3>
+          <p class="special__description">
+            1 menu dessert .
+          </p>
+        </div>
+      </div>
+      <div class="products__content grid">
+        <!-- 1 -->
+        <article class="products__card main-menu">
+          <div class="products__shape">
+            <img src="assets/media/img2.jpg" alt="" class="products__img" />
+          </div>
+          <div class="products__data">
+            <h2 class="products__price">Rp.23,000</h2>
+            <h3 class="products__name">Macha</h3>
+
+            <a href="optiom.html">
+              <button class="button products__button">
+                <i class="bx bx-shopping-bag"></i>
+              </button>
+            </a>
+          </div>
+        </article>
+        <article class="products__card main-menu">
+          <div class="products__shape">
+            <img src="./assets/media/img3.jpg" alt="" class="products__img" />
+          </div>
+          <div class="products__data">
+            <h2 class="products__price">Rp.23,000</h2>
+            <h3 class="products__name">Macha</h3>
+
+            <a href="optiom.html">
+              <button class="button products__button">
+                <i class="bx bx-shopping-bag"></i>
+              </button>
+            </a>
+          </div>
+        </article>
+        <article class="products__card main-menu">
+          <div class="products__shape">
+            <img src="./assets/media/img4.jpg" alt="" class="products__img" />
+          </div>
+          <div class="products__data">
+            <h2 class="products__price">Rp.30,000</h2>
+            <h3 class="products__name">Coffe Ndeso</h3>
+
+            <a href="optiom.html">
+              <button class="button products__button">
+                <i class="bx bx-shopping-bag"></i>
+              </button>
+            </a>
+          </div>
+        </article>
+        <article class="products__card main-menu">
+          <div class="products__shape">
+            <img src="./assets/media/img5.jpeg" alt="" class="products__img" />
+          </div>
+          <div class="products__data">
+            <h2 class="products__price">Rp.25,000</h2>
+            <h3 class="products__name">Cappucino</h3>
+
+            <a href="optiom.html">
+              <button class="button products__button">
+                <i class="bx bx-shopping-bag"></i>
+              </button>
+            </a>
+          </div>
+        </article>
+        <!-- 2 -->
+        <article class="products__card coffee">
+          <div class="products__shape">
+            <img id="img1" src="./assets/media/img6.webp" alt="" class="products__img" />
+          </div>
+          <div class="products__data">
+            <h2 class="products__price">Rp.15,000</h2>
+            <h3 class="products__name">Black Coffe</h3>
+
+            <a href="optiom.html">
+              <button class="button products__button">
+                <i class="bx bx-shopping-bag"></i>
+              </button>
+            </a>
+          </div>
+        </article>
+        <article class="products__card coffee">
+          <div class="products__shape">
+            <img src="./assets/media/imgmkn1.webp" alt="" class="products__img" />
+          </div>
+          <div class="products__data">
+            <h2 class="products__price">Rp.25,000</h2>
+            <h3 class="products__name">Kentang Goreng</h3>
+
+            <a href="optiom.html">
+              <button class="button products__button">
+                <i class="bx bx-shopping-bag"></i>
+              </button>
+            </a>
+          </div>
+        </article>
+        <article class="products__card coffee">
+          <div class="products__shape">
+            <img src="./assets/media/imgmkn2.jpeg" alt="" class="products__img" />
+          </div>
+          <div class="products__data">
+            <h2 class="products__price">Rp.37,000</h2>
+            <h3 class="products__name">Mie Nasi Goreng</h3>
+
+            <a href="optiom.html">
+              <button class="button products__button">
+                <i class="bx bx-shopping-bag"></i>
+              </button>
+            </a>
+          </div>
+        </article>
+        <!-- 3 -->
+        <article class="products__card dessert">
+          <div class="products__shape">
+            <img src="./assets/media/imgmkn3.jpg" alt="" class="products__img" />
+          </div>
+          <div class="products__data">
+            <h2 class="products__price">Rp.24,000</h2>
+            <h3 class="products__name">Burger</h3>
+
+            <a href="optiom.html">
+              <button class="button products__button">
+                <i class="bx bx-shopping-bag"></i>
+              </button>
+            </a>
+          </div>
+        </article>
+        <article class="products__card dessert">
+          <div class="products__shape">
+            <img src="./assets/media/imgmkn4.jpg" alt="" class="products__img" />
+          </div>
+          <div class="products__data">
+            <h2 class="products__price">Rp.25,000</h2>
+            <h3 class="products__name">Roti Coklat Keju</h3>
+
+            <a href="optiom.html">
+              <button class="button products__button">
+                <i class="bx bx-shopping-bag"></i>
+              </button>
+            </a>
+          </div>
+        </article>
+        <article class="products__card dessert">
+          <div class="products__shape">
+            <img src="./assets/media/imgmkn5.jpg" alt="" class="products__img" />
+          </div>
+          <div class="products__data">
+            <h2 class="products__price">Rp.43,000</h2>
+            <h3 class="products__name">Chicken Katsu</h3>
+
+            <a href="booking.html">
+              <button class="button products__button">
+                <i class="bx bx-shopping-bag"></i>
+              </button>
+            </a>
+          </div>
+        </article>
+        <article class="products__card dessert">
+          <div class="products__shape">
+            <img src="./assets/media/dessert4.jpg" alt="" class="products__img" />
+          </div>
+          <div class="products__data">
+            <h2 class="products__price">Rp.25,000</h2>
+            <h3 class="products__name">Milk dessert</h3>
+
+            <a href="optiom.html">
+              <button class="button products__button">
+                <i class="bx bx-shopping-bag"></i>
+              </button>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- place -->
+    <section class="place section" id="place">
+      <div class="place__container container">
+        <h3 class="title_product">
+          Tempat <span>Kami</span>
+        </h3>
+        <h2 class="section__title">
+          Membuat kamu merasa nyaman <br />
+          dengan fasilitas yang kami sediakan
+        </h2>
+
+        <div class="place__content grid">
+          <div class="place__images">
+            <img src="./assets/media//cafe.depan.jpg" alt="" class="place__img-big" />
+            <div class="place__img-smalls">
+              <img src="./assets/media/caffe vip.jpg" alt="" class="place__img-small active" />
+              <img src="./assets/media/cafe indoor2.jpg" alt="" class="place__img-small" />
+              <img src="./assets/media/cafe indor.png" alt="" class="place__img-small" />
+            </div>
+          </div>
+
+          <div class="place__data">
+            <h2 class="place__title">pilih tempat yang kamu sukai</h2>
+            <p class="place__description">
+              Kami memberikan tempat terbaik dengan <br />
+              suasana fokus serta desain yang cantik.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog section" id="blog">
+      <div class="blog__container container">
+        <h3 class="title_product">
+          Blog <span>Kami</span>
+        </h3>
+        <h2 class="section__title">
+          Blog dengan insides terbaik.
+        </h2>
+
+        <div class="blog__content grid">
+          <article class="blog__card">
+            <div class="blog__image">
+              <img src="./assets/media/nanam cofe.jpg" alt="" class="blog__img" />
+              <a href="#" class="blog__button">
+                <i class="bx bx-right-arrow-alt"></i>
+              </a>
+              <div class="blog__stats">
+                <div class="blog__reaction">
+                  <i class="bx bx-comment"></i>
+                  <span>12</span>
+                </div>
+                <div class="blog__reaction">
+                  <i class="bx bx-show"></i>
+                  <span>76,5k</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog__data">
+              <h2 class="blog__title">Cara menanam biji kopi</h2>
+              <p class="blog__description">
+                Blog-blog tentang kopi akan banyak membantu kamu
+                tentang cara menanam biji kopi dengan standar tinggi.
+              </p>
+            </div>
+          </article>
+          <article class="blog__card">
+            <div class="blog__image">
+              <div class="img1">
+                <img src="./assets/media/coffee.jpg" alt="" class="blog__img2" />
+              </div>
+              <a href="#" class="blog__button2">
+                <i class="bx bx-right-arrow-alt"></i>
+              </a>
+              <div class="data_blog">
+                <div class="blog__stats2">
+                  <div class="blog__reaction">
+                    <i class="bx bx-comment"></i>
+                    <span>96</span>
+                  </div>
+                  <div class="blog__reaction">
+                    <i class="bx bx-show"></i>
+                    <span>356,7k</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="blog__data">
+                <h2 class="blog__title">Cara membuat kopi untuk pemula</h2>
+                <p class="blog__description">
+                  Blog tentang coffe akan banyak membantu kamu tentang cara
+                  membuat coffe dengan tempat yang indah.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Contact Section start -->
+  <section id="contact" class="contact">
+    <h3 class="title_product">
+      Menu <span>Kami</span>
+    </h3>
+    <p class="section__title">Kota Jambi, Jambi, Indonesia</p>
+
+    <div class="row">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7976.519736277652!2d103.59367141739177!3d-1.6014815935074123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e2588f062fd5115%3A0xcf52396a57a573a8!2sSolok%20Sipin%2C%20Kec.%20Telanaipura%2C%20Kota%20Jambi%2C%20Jambi!5e0!3m2!1sid!2sid!4v1716452659429!5m2!1sid!2sid"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+      <form action="">
+        <div class="input-group">
+          <i data-feather="user"></i>
+          <input type="text" placeholder="Nama" />
+        </div>
+        <div class="input-group">
+          <i data-feather="mail"></i>
+          <input type="text" placeholder="Email" />
+        </div>
+        <div class="input-group">
+          <i data-feather="phone"></i>
+          <input type="text" placeholder="No. Tlp" />
+        </div>
+        <button type="submit" class="btn">Kirim</button>
+      </form>
+    </div>
+  </section>
+  <!-- Contact Section end -->
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer__container container">
+      <h1 class="footer__title">Familly<span>.shoop</span></h1>
+      <p class="footer__description">
+        Tempat terbaik untuk bekerja<br />
+        dan untuk kegiatan produktif.
+      </p>
+
+      <div class="footer__content grid">
+        <div class="footer__data">
+          <h2 class="footer__subtitle">Address</h2>
+          <p class="footer__information">
+            Jln. Jendral Sudirman <br />
+            Jambi. 007
+          </p>
+        </div>
+        <div class="footer__data">
+          <h2 class="footer__subtitle">Contact</h2>
+          <p class="footer__information">
+            +62853235790 <br />
+            coffeeshopp@gmail.com
+          </p>
+        </div>
+        <div class="footer__data">
+          <h2 class="footer__subtitle">Office</h2>
+          <p class="footer__information">
+            Monday - Saturday <br />
+            10AM - 10PM
+          </p>
+        </div>
+        <div class="footer__data">
+          <p class="footer__newsletter-description">
+            Berlangganan Blog Dengan Kami
+          </p>
+
+          <div class="footer__newsletter">
+            <input type="email" placeholder="Alamat Email Anda" class="footer__input" />
+            <button class="footer__button">
+              <i class="bx bx-right-arrow-alt"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__group">
+        <ul class="footer__social">
+          <a href="#" target="_blank" class="footer__social-link">
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a href="#" target="_blank" class="footer__social-link">
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a href="#" target="_blank" class="footer__social-link">
+            <i class="bx bxl-tiktok"></i>
+          </a>
+        </ul>
+
+        <span class="footer__copy"> &#169; ypcode. All rigths reserved </span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    feather.replace();
+  </script>
+
+  <script>
+    var home = document.getElementById("background");
+
+    var images = [
+      "assets/imgslides/img1.jpg",
+      "assets/imgslides/img2.jpg",
+      "assets/imgslides/img3.jpg"
+    ];
+
+    var len = images.length;
+    var i = 0;
+
+    function slider() {
+      if (i >= len) {
+        i = 0;
+      }
+      home.style.backgroundImage = "url('" + images[i] + "')";
+      i++;
+      setTimeout(slider, 3000);
+    }
+
+    window.onload = slider;
+  </script>
+
+
+
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

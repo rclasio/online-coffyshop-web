@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familly Coffee-Main</title>
+</head>
+
+<body>
+    <a href="booking.html" target="_blank">
+        <button class="hero__button">Order Now</button>
+    </a>
+    <a href="delivery.html" target="_blank">
+        <button class="hero__button">Reservaation</button>
+    </a>
+</body>
+
+<style>
+           body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative; /* Memastikan posisi relatif */
+            background-color: #530000;
+        }
+
+        body::before {
+            content: "";
+            background-image: url('assets/media/option_bg.jpg');
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Menempatkan di belakang elemen lain */
+            opacity: 0.7; /* Opacity */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .hero__button {
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            background-color: goldenrod;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: 0.5rem;
+            cursor: pointer;
+        }
+
+        .hero__button:hover {
+            background-color: transparent;
+            border: gold 2px solid;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            .hero__button {
+                width: 80%;
+            }
+        }
+</style>
+
+</html>
